@@ -19,8 +19,7 @@ class Automobile(Vehicle):
 
         #info input
         self.year = input('Please input year of automobile: ')
-        self.make =
-        input('Please input make of automobile: ')
+        self.make = input('Please input make of automobile: ')
         self.model = input('Please input model of automobile: ')
         self.doors = int(input('Please input number of doors: '))
         self.roof = input('Please input roof type (solid or sun roof): ')
