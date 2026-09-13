@@ -15,22 +15,22 @@ class Vehicle:
 
 class Automobile(Vehicle):
     def __init__(self):
-        super().__init__()
+        super().__init__() #keeps superclass initialization
+
+        #info input
         self.year = input('Please input year of automobile: ')
-        self.make = input('Please input make of automobile: ')
+        self.make =
+        input('Please input make of automobile: ')
         self.model = input('Please input model of automobile: ')
         self.doors = int(input('Please input number of doors: '))
         self.roof = input('Please input roof type (solid or sun roof): ')
+
+    # display information input
     def display_inputs(self):
         print("---VEHICLE DETAILS---")
-        print(f"Vehicle Type: {self.type}")
-        print(f"\nYear: {self.year}")
-        print(f"\nMake: {self.make}")
-        print(f"\nModel: {self.model}")
-        print(f"\nDoors: {self.doors}")
-        print(f"\nRoof Type: {self.roof}")
+        print(f"Vehicle Type: {self.type} \nYear: {self.year} \nMake: {self.make} \nModel: {self.model} \nDoors: {self.doors} \nRoof Type: {self.roof}")
 
-print("Welcome to the Car_Info_Printer_App by Ashleigh Molinet")
-car = Automobile()
-car.display_inputs()
-print ("Thank you for using the Car_Info_Printer_App, hope you have a printer-ific day!")
+print("Welcome to the Car_Info_Printer_App by Ashleigh Molinet") #program header
+car = Automobile() #prompts user for input & stores it
+car.display_inputs() #displays stored information
+print ("Thank you for using the Car_Info_Printer_App, hope you have a printer-ific day!") #program footer
