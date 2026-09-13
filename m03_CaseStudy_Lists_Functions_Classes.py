@@ -1,5 +1,5 @@
 # Ashleigh Molinet
-# Car_Printer_App
+# Car_Info_Printer_App
 # SDEV220 Created 2026-09-12
 
 # Program will have the superclass Vehicle and the subclass Automobile
@@ -10,13 +10,12 @@
 # app will output data in easy to read format
 
 class Vehicle:
-    def __init__(self, type):
+    def __init__(self):
         self.type = input('Please input type of vehicle: ')
-        print("Vehicle Type: ", self.type)
 
 class Automobile(Vehicle):
-    def __init__(self, year, make, model, doors, roof):
-        super.__init__()
+    def __init__(self):
+        super().__init__()
         self.year = input('Please input year of automobile: ')
         self.make = input('Please input make of automobile: ')
         self.model = input('Please input model of automobile: ')
@@ -30,3 +29,8 @@ class Automobile(Vehicle):
         print(f"\nModel: {self.model}")
         print(f"\nDoors: {self.doors}")
         print(f"\nRoof Type: {self.roof}")
+
+print("Welcome to the Car_Info_Printer_App by Ashleigh Molinet")
+car = Automobile()
+car.display_inputs()
+print ("Thank you for using the Car_Info_Printer_App, hope you have a printer-ific day!")
