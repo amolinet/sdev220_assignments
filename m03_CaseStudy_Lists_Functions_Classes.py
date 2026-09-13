@@ -22,5 +22,11 @@ class Automobile(Vehicle):
         self.model = input('Please input model of automobile: ')
         self.doors = int(input('Please input number of doors: '))
         self.roof = input('Please input roof type (solid or sun roof): ')
-    def display_i
-        
+    def display_inputs(self):
+        print("---VEHICLE DETAILS---")
+        print(f"Vehicle Type: {self.type}")
+        print(f"\nYear: {self.year}")
+        print(f"\nMake: {self.make}")
+        print(f"\nModel: {self.model}")
+        print(f"\nDoors: {self.doors}")
+        print(f"\nRoof Type: {self.roof}")
